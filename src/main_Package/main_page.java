@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JToolBar;
 import java.awt.BorderLayout;
@@ -47,6 +48,8 @@ public class main_page{
 		frmTexteditor.getContentPane().setBackground(new Color(0, 0, 0));
 		Dimension screenSize = screenDetails();
 		frmTexteditor.setBounds(0,0, screenSize.width, screenSize.height);
+		ImageIcon icon = new ImageIcon("src/icons/icon.png"); 
+		frmTexteditor.setIconImage(icon.getImage());
 		frmTexteditor.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frmTexteditor.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmTexteditor.getContentPane().setLayout(null);
