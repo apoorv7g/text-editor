@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.GraphicsEnvironment;
 import java.awt.Toolkit;
 
 import javax.swing.ImageIcon;
@@ -35,6 +36,9 @@ public class main_page {
     }
 
     private void initialize() {
+    	
+    	GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+
         Dimension screenSize = screenDetails();
         frmTexteditor = new JFrame();
         frmTexteditor.setTitle("text-editor");
@@ -49,7 +53,7 @@ public class main_page {
         panel.setLayout(new BorderLayout());
 
         JTextArea textArea = new JTextArea();
-        Font font = new Font("Arial", Font.PLAIN, 14);
+        Font font = new Font("Roboto Mono", Font.PLAIN, 21);
         textArea.setFont(font);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
