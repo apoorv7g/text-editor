@@ -83,9 +83,7 @@ public class main_page {
         scrollPane.getVerticalScrollBar().setUI(new CustomScrollBarUI());
 
         
-       
-
-        // Load the Roboto font file
+      
        
 
         // Get the names of all available fonts
